@@ -1,14 +1,13 @@
 2026:
   - title: Safety Cost of Steering Vectors Is Separable and Reducible
     acronym: ICMLW 2026
-    venue: CompLearn, AI4GOOD Workshop, ICML 2026
-    incoming: true
+    venue: AI4GOOD Workshop, ICML 2026
     authors:
       - name: Yuxiao Li
         equal: false
       - name: Gjergji Kasneci
         equal: false
-    abstract: ""
+    abstract: "Incoming"
   - title: Analysing the Safety Pitfalls of Steering Vectors
     acronym: ACL 2026
     venue: Findings of ACL 2026
