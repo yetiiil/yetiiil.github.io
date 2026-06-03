@@ -21,12 +21,6 @@ education:
     note: Double Diploma with Université Claude Bernard Lyon 1 (2019–2021)
 
 work:
-  - position: Research Assistant
-    company: ETH Zurich, Switzerland
-    date: Mar 2024 - Sep 2024
-    logo: epfl-favicon.png
-    supervisor: Prof. Frédéric Kaplan & Prof. Konrad Schindler
-    description: Diffusion model for generative single-view 3D reconstruction with SOTA performance.
   - position: Data Scientist Intern
     company: Nestlé SA, Switzerland
     date: Sep 2023 - Feb 2024
@@ -49,27 +43,4 @@ theses: []
 reviews:
   - venue: Compositional Learning Workshop (ICML)
     year: 2026
-
-scholarships:
-  - year: 2017
-    title: Outstanding Freshman for Basic Science Scholarship
-    institution: Wuhan University
-  - year: 2018
-    title: Merit-Based Scholarship
-    institution: Wuhan University
-  - year: 2019
-    title: Merit-Based Scholarship
-    institution: Wuhan University
-  - year: 2019
-    title: Nanyang Technological University Summer School Scholarship
-    institution: Wuhan University
-  - year: 2020
-    title: Extraordinary Oversea Exchange Scholarship
-    institution: Wuhan University
-  - year: 2023
-    title: NII International Internship Grant
-    institution: NII & Google
-  - year: 2024
-    title: Swiss Mobility Scholarship
-    institution: EPFL
 
