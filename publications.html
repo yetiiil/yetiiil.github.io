@@ -128,12 +128,15 @@ inlineCSS: >-
             </span>
           {% endif %}
         </div>
-        <div style="display: flex; gap: 0.4rem;">
+        <div style="display: flex; gap: 0.4rem; align-items: center;">
           <div class="pub-venue">
             {% if pub.venue %}
               {{ pub.venue }}
             {% endif %}
           </div>
+          {% if pub.incoming %}
+            <em style="font-size:1.3rem; color:#888;">· Incoming</em>
+          {% endif %}
         </div>
         <div class="pub-abstract js-truncate" id="abstract" data-lines="3">
           {{ pub.abstract }}

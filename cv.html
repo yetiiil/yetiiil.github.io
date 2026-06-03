@@ -131,7 +131,7 @@ inlineCSS: >-
           {% endif %}
         </div>
         <details>
-          <summary>Abstract</summary>
+          <summary>Abstract{% if pub.incoming %} · <em>Incoming</em>{% endif %}</summary>
           <div  class="abstract">
             {{ pub.abstract }}
           </div>
