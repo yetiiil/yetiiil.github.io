@@ -86,7 +86,7 @@ inlineCSS: >-
   <article class="publication" style="padding-left: 26px;">
     {% for year in site.data.publications %}
       {% for pub in year[1] %}
-        <span class="series">[{{ pub.acronym }}]</span>
+        <span class="series">{{ pub.acronym }}</span>
         <cite class="title">
           {% if pub.DOI or pub.PDF %}
             <a href="{% if pub.DOI %}{{ pub.DOI }}{% else %}{{ pub.PDF }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
