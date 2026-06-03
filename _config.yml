@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andrea Gilot
-repository: https://github.com/agilot/personal-webpage
+title: Yuxiao Li
+repository: https://github.com/yetiiil/yetiiil.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://andreagilot.com # the base hostname & protocol for your site, e.g. http://example.com
-google_scholar: https://scholar.google.com/citations?user=agqqmJAAAAAJ
-github: https://github.com/agilot
-bluesky: https://bsky.app/profile/agilot.bsky.social
-orcid: https://orcid.org/0009-0006-4463-9414
+url: https://yetiiil.github.io # the base hostname & protocol for your site, e.g. http://example.com
+google_scholar: https://scholar.google.com/citations?user=GjcJpncAAAAJ&hl=en&oi=ao
+github: https://github.com/yetiiil
+bluesky: https://bsky.app/profile/yuxiaoli.bsky.social
+orcid: https://orcid.org/0009-0006-8181-0110
 portrait: images/profile_picture.jpeg
-description: "PhD student in Computer Science at Uppsala University. My research focuses on verification of numerical software. Broadly interested in formal methods, programming languages, and software engineering."
+description: "PhD student in Computer Science at Technical University of Munich. My research focuses on enhancing the reliability, robustness, and safety of AI models, with a particular interest in LLM robustness, factuality, and adversarial resilience. Currently, I am developing a lightweight language model designed to generate factually reliable text summaries, while also exploring methods to prevent LLMs from being manipulated into producing misleading or harmful content. My broader interests include evaluating and mitigating risks in AI systems and adversarial robustness to ensure safer and more trustworthy AI deployment."
 
 
 # Build settings

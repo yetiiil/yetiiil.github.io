@@ -1,104 +1,40 @@
 education:
-  - name: Uppsala University
-    country: Sweden
-    date: 2024-Present
+  - name: Technical University of Munich
+    country: Germany
+    date: 2025-Present
     title: PhD in Computer Science
-    advisor: Prof. Eva Darulova
-    logo: uppsala-favicon.png
+    advisor: Prof. Gjergji KASNECI
+    logo: tum.png
   - name: EPFL
     country: Switzerland
     date: 2021-2024
-    title: "MSc in Computer Science, Specialization: Computer Science Theory"
-    thesis: Inductive Datatypes Mechanized in Set Theory
-    advisor: Prof. Viktor Kuncak
+    title: MSc in Digital Humanities
     logo: epfl-favicon.png
-  - name: EPFL
-    country: Switzerland
-    date: 2018-2022
-    title: BSc in Communication Systems
-    thesis: Formal Verification of Network Calculus
-    advisor: Prof. Jean-Yves Le Boudec
-    logo: epfl-favicon.png
+    advisor: Prof. Frédéric KAPLAN
+  - name: Wuhan University
+    country: China
+    date: 2017-2021
+    title: BSc in Physics
+    logo: wuhan-favicon.png
+    advisor: Prof. Gerald GRENIER
 
 work:
+  - position: Data Scientist Intern
+    company: Nestlé SA, Switzerland
+    date: Sep 2023 - Feb 2024
+    logo: nestle.png
   - position: Research Intern
-    company: LARA (EPFL)
-    supervisor: Prof. Viktor Kuncak
-    date: July 2024
-    description: Continued my Master thesis, a mechanization of inductive datatypes inside a first order logic theorem prover equipped with the axioms of set theory.
-    logo: epfl-favicon.png
+    company: National Institute of Informatics, Japan
+    date: Mar 2023 -Aug 2023
+    logo: nii.png
+  - position: Junior Machine Learning Engineer
+    company: Visium SA, Switzerland
+    date: Sep 2022-Dec 2022
+    logo: visium.png
   - position: Research Intern
-    company: Digital Asset
-    supervisor: Dr. Andreas Lochbihler
-    date: March-August 2023
-    description: Proof formalization and mechanization of an optimization of a decentralized protocol adopted by financial institutions including Deutsche Börse, HKMA, Goldman Sachs, and BNP Paribas.
-    logo: da-favicon.png
-  - position: Software Intern
-    company: IOxOS Technologies
-    date: July-August 2019
-    description: Developpement of a graphical interface in Java and a client-server architecture in C to drive a data acquisition system.
-    logo: ioxos-favicon.png
-
-theses:
-  - category: master
-    list: 
-    - student: Arvid Lorén
-      title: Usability-Driven IDE Integration for the Stainless verifier
-    - student: Holger Swartling
-      title: Large-Scale Code Deduplication
-    - student: Babitha Mannaravalappil Kuvvakkattayil
-      title: Analyzing Energy-Related Tradeoffs in Pull Requests Through Quality-in-Use
-      cosupervisor: jennifer_gross
-    - student: Mario Tannous
-      title: Specification Inference for Scala and Stainless
-  - category: bachelor
-    list:
-    - student: Carl Martinsson
-      title: "Code Maintainability and Data Structures in Energy-Aware Software: An Empirical GitHub Study"
-      cosupervisor: jennifer_gross
-    - student: Samuel Sverker
-      title: "Energy-Aware Software Development in Operating Systems: A Thematic Analysis of OS-Level Optimization Techniques"
-      cosupervisor: jennifer_gross
-    - student: Valentin Hassinen
-      title: "Field Testing Stainless by Verifying Daisy's AST Library"
-
-teaching:
-  - position: Teaching Assistant
-    institution: Uppsala University
-    logo: uppsala-favicon.png
-    courses:
-      - code: 1DL201
-        title: Program Design and Data Structures
-        years: 
-          - 2024
-          - 2025
-      - code: 1DL042
-        title: Programming
-        years: 
-          - 2025
-  - position: Student Assistant
-    institution: EPFL
+    company: EPFL DHLab, Switzerland
+    date: Jul 2022- Aug 2022
     logo: epfl-favicon.png
-    courses:
-      - code: CS-550
-        title: Formal Verification
-        years: 
-          - 2022
-          - 2023
-      - code: CS-251
-        title: Theory of Computation
-        years: 
-          - 2022
-      - code: CS-233
-        title: Introduction to Machine Learning
-        years: 
-          - 2021
-          - 2022
-      - code: EE-205
-        title: Signals and Systems
-        years: 
-          - 2021
-      - code: CS-173
-        title: Digital System Design
-        years: 
-          - 2020
+
+theses: []
+

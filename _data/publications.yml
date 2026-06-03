@@ -1,42 +1,51 @@
 2026:
-  - title: A Large-Scale Study of Floating-Point Usage in Statically Typed Languages
+  - title: Analysing the Safety Pitfalls of Steering Vectors
     acronym: Preprint
     authors:
-      - name: Andrea Gilot
+      - name: Yuxiao Li
         equal: false
-      - name: Tobias Wrigstad
+      - name: Alina Fastowski
         equal: false
-      - name: Eva Darulova
+      - name: Efstratios Zaradoukas
         equal: false
-    abstract: Reasoning about floating-point arithmetic is notoriously hard. While static and dynamic analysis techniques or program repair have made significant progress, more work is still needed to make them relevant to real-world code. On the critical path to that goal is understanding what real-world floating-point code looks like. To close that knowledge gap, this paper presents the first large-scale empirical study of floating-point arithmetic usage in statically typed languages across public GitHub repositories. We follow state-of the art mining practices including random sampling and filtering based on only intrinsic properties to avoid bias, and identify floating-point usage by searching for keywords in the source code, and programming language constructs (e.g., loops) by parsing the code. Our evaluation supports the claim often made in papers that floating-point arithmetic is widely used. Comparing statistics such as size and usage of certain constructs and functions, we find that benchmarks used in literature to evaluate automated reasoning techniques for floating-point arithmetic are in certain aspects representative of 'real-world' code, but not in all. We aim for our study and dataset to help future techniques for floating-point arithmetic to be designed and evaluated to match actual users' expectations. 
-    PDF: https://arxiv.org/pdf/2509.04936
-  - title: Verifying Floating-Point Programs in Stainless
-    venue: Tools and Algorithms for the Construction and Analysis of Systems 2026
-    acronym: TACAS'26
-    venue_link: https://etaps.org/2026/conferences/tacas/
+      - name: Bardh Prenkaj
+        equal: false
+      - name: Gjergji Kasneci
+        equal: false
+    abstract: Activation steering has emerged as a powerful tool to shape LLM behavior without the need for weight updates. While its inherent brittleness and unreliability are well-documented, its safety implications remain underexplored. In this work, we present a systematic safety audit of steering vectors obtained with Contrastive Activation Addition (CAA), a widely used steering approach, under a unified evaluation protocol. Using JailbreakBench as benchmark, we show that steering vectors consistently influence the success rate of jailbreak attacks, with stronger amplification under simple template-based attacks. Across LLM families and sizes, steering the model in specific directions can drastically increase (up to 57%) or decrease (up to 50%) its attack success rate (ASR), depending on the targeted behavior. We attribute this phenomenon to the overlap between the steering vectors and the latent directions of refusal behavior. Thus, we offer a traceable explanation for this discovery. Together, our findings reveal a previously unobserved safety gap in LLMs, marking a trade-off between controllability and safety. We release our code at https://anonymous.4open.science/r/steering-safety.
+
+2025:
+  - title: "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual Recall in LLMs"
+    acronym: Preprint
     authors:
-      - name: Andrea Gilot
-        equal: true
-      - name: Axel Bergström
-        equal: true
-      - name: Eva Darulova
+      - name: Alina Fastowski
         equal: false
-    abstract: We extend the Stainless deductive verifier with floating-point support, providing the first automated verification support for floating-point numbers for a subset of Scala that includes polymorphism, recursion and higher-order functions. We follow the recent approach in the KeY verifier to axiomatise reasoning about mathematical functions, but go further by supporting all functions from Scala's math API, and by verifying the correctness of the axioms against the actual implementation in Stainless itself. We validate Stainless' floating-point support on a new set of benchmarks sampled from real-world code from GitHub, showing that it can verify specifications about e.g., ranges of output or absence of special values for most supported functions, or produce counter-examples when the specifications do not hold.
-    # artifact: https://doi.org/10.5281/zenodo.17486575
+      - name: Bardh Prenkaj
+        equal: false
+      - name: Yuxiao Li
+        equal: false
+      - name: Gjergji Kasneci
+        equal: false
+    abstract: LLMs are now an integral part of information retrieval. As such, their role as question answering chatbots raises significant concerns due to their shown vulnerability to adversarial man-in-the-middle (MitM) attacks. Here, we propose the first principled attack evaluation on LLM factual memory under prompt injection via χmera, our novel, theory-grounded MitM framework. By perturbing the input given to "victim" LLMs in three closed-book and fact-based QA settings, we undermine the correctness of the responses and assess the uncertainty of their generation process. Surprisingly, trivial instruction-based attacks report the highest success rate (up to 85.3% while simultaneously having a high uncertainty for incorrectly answered questions. To provide a simple defense mechanism against χmera, we train Random Forest classifiers on the response uncertainty levels to distinguish between attacked and unattacked queries (average AUC of up to 96%). We believe that signaling users to be cautious about the answers they receive from black-box and potentially corrupt LLMs is a first checkpoint toward user cyberspace safety.
+    PDF: https://arxiv.org/pdf/2511.05919
 2024:
-  - title: Mechanized HOL Reasoning in Set Theory
-    venue: International Conference on Interactive Theorem Proving 2024
-    acronym: ITP'24
-    venue_link: https://www.viam.science.tsu.ge/itp2024/
+  - title: A Modular Framework for Single-View 3D Reconstruction of Indoor Environments
+    acronym: MSc Thesis
     authors:
-      - name: Simon Guilloud
+      - name: Yuxiao Li
         equal: false
-      - name: Sankalp Gambhir
+    abstract: "We propose a modular framework for single-view indoor scene 3D reconstruction, where several core modules are powered by diffusion techniques. Traditional approaches for this task often struggle with the complex instance shapes and occlusions inherent in indoor environments. They frequently overshoot by attempting to predict 3D shapes directly from incomplete 2D images, which results in limited reconstruction quality. We aim to overcome this limitation by splitting the process into two steps: first, we employ diffusion-based techniques to predict the complete views of the room background and occluded indoor instances, then transform them into 3D. Our modular framework makes contributions to this field through the following components: an amodal completion module for restoring the full view of occluded instances, an inpainting model specifically trained to predict room layouts, a hybrid depth estimation technique that balances overall geometric accuracy with fine detail expressiveness, and a view-space alignment method that exploits both 2D and 3D cues to ensure precise placement of instances within the scene. This approach effectively reconstructs both foreground instances and the room background from a single image. Extensive experiments on the 3D-Front dataset demonstrate that our method outperforms current state-of-the-art (SOTA) approaches in terms of both visual quality and reconstruction accuracy. The framework holds promising potential for applications in interior design, real estate, and augmented reality."
+    PDF: https://arxiv.org/pdf/2512.17955
+  - title: A Machine Learning Approach to Identify Printing Blocks for Japanese Kokatsuji (Old Movable Type) Books
+    venue: Digital Humanities Conference 2024
+    acronym: DH2024
+    venue_link: https://dh2024.adho.org/index.html
+    authors:
+      - name: Yuxiao Li
         equal: false
-      - name: Andrea Gilot
+      - name: Kitamoto Asanobu
         equal: false
-      - name: Viktor Kuncak
-        equal: false
-    abstract: We present a mechanized embedding of higher-order logic (HOL) and algebraic data types (ADTs) into first-order logic with ZFC axioms. Our approach interprets types as sets, with function (arrow) types coinciding with set-theoretic function spaces. We assume traditional FOL syntax without notation for term-level binders. To embed λ-terms, we define a notion of context, defining the closure of all abstractions occuring inside a term. We implement the embedding in the Lisa proof assistant for schematic first-order logic and its library based on axiomatic set theory (presented at ITP 2023). We show how to implement type checking and the proof steps of HOL Light as proof-producing tactics in Lisa. The embedded HOL theorems and proofs are interoperable with the existing Lisa library. This yields a form of soft type system supporting top-level polymorphism and ADTs within set theory. The approach offers tools for Lisa users to carry HOL-style proofs within set theory. It also enables the import of HOL Light theorem statements into Lisa, as well as the replay of small HOL Light kernel proofs.
-    DOI: https://doi.org/10.4230/LIPIcs.ITP.2024.18
-    PDF: https://arxiv.org/pdf/2403.13403
+    abstract: In this work, we propose a siamese network based approach to quantify the visual similarity of Japanese Kokatsuji (Old Movable Type) printing blocks, empowering humanities scholars to conduct quantitative analyses of Kokatsuji books.
+    DOI: https://doi.org/10.5281/zenodo.13761066
+
+

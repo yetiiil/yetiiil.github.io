@@ -88,7 +88,7 @@ inlineCSS: >-
                 {% assign author_display = author_name %}
               {% endif %}
 
-              {% if author_name == "Andrea Gilot" %}
+              {% if author_name == "Yuxiao Li" %}
                 {% assign author_display = "<b>" | append: author_display | append: "</b>" %}
               {% endif %}
 
@@ -142,66 +142,6 @@ inlineCSS: >-
   {% endfor %}
 </div>
 
-<!-- Teaching -->
-
-<br>
-  <div class="card">
-    <h2 class="header">Teaching</h2>
-    <div class="line-with-icon">
-      <img class="favicon" src="/images/favicons/uppsala-favicon.png" alt="Uppsala University Logo">
-      <div class="entry">
-        <b>Thesis supervision</b>,<i> Uppsala University</i>
-        <br>
-        <div>
-          <ul class="theses">
-            {% for degree in site.data.cv.theses %}
-              <li>
-                {{ degree.category | capitalize }} theses:
-                <ul>
-                  {% for thesis in degree.list %}
-                  <li>
-                    {{ thesis.student }} - <i>{{ thesis.title }}</i>
-                    {% if thesis.cosupervisor %}
-                      (co-supervised with
-                          {% assign p = site.data.people[thesis.cosupervisor] %}
-                          {%- if p.webpage -%}
-                            <a href="{{ p.webpage }}" target="_blank" rel="noopener noreferrer">{{ p.name }}</a>
-                          {%- else -%}
-                            {{ p.name }}
-                          {%- endif -%}
-                      )
-                    {% endif %}
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    {% for position in site.data.cv.teaching %}
-      <div class="line-with-icon">
-        <img class="favicon" src="/images/favicons/{{ position.logo }}" alt="{{ position.institution }} Logo">
-        <div class="entry">
-          <b>{{ position.position }}</b>,<i> {{ position.institution }}</i>
-          <br>
-          <div>
-            <ul>
-              {% for course in position.courses %}
-              <li>{{ course.code }} {{ course.title }} ({{ course.years | join: ", " }})</li>
-              {% endfor %}
-            </ul>
-            </div>
-        </div>
-      </div>
-      <br>
-    {% endfor %}
-    
-  </div>
 
 <!-- Past Projects -->
 <!-- <br>
