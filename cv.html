@@ -76,7 +76,11 @@ inlineCSS: >-
       {% for pub in year[1] %}
         <span class="series">[{{ pub.acronym }}]</span>
         <cite class="title">
-          <a href="{% if pub.DOI %} {{ pub.DOI }} {% else %} {{ pub.PDF }} {% endif %}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+          {% if pub.DOI or pub.PDF %}
+            <a href="{% if pub.DOI %}{{ pub.DOI }}{% else %}{{ pub.PDF }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+          {% else %}
+            {{ pub.title }}
+          {% endif %}
         </cite>
           <div class="metadata">
             {% assign formatted_authors = "" %}
@@ -110,6 +114,9 @@ inlineCSS: >-
               </span>
             {% endif %}
           </div>
+          {% if pub.venue %}
+            <div class="pub-venue"><em>{{ pub.venue }}</em></div>
+          {% endif %}
         </div>
         <details>
           <summary>Abstract</summary>
@@ -157,16 +164,6 @@ inlineCSS: >-
   </ul>
 </div>
 
-<!-- Scholarships & Grants -->
-<br>
-<div class="card">
-  <h2 class="header">Scholarship &amp; Grant</h2>
-  <ul>
-    {% for s in site.data.cv.scholarships %}
-      <li><b>{{ s.year }}</b> {{ s.title }}, <i>{{ s.institution }}</i></li>
-    {% endfor %}
-  </ul>
-</div>
 
 
 <!-- Past Projects -->
