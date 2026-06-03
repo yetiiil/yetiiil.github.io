@@ -56,7 +56,11 @@ inlineCSS: >-
         {% endif %}
         <div class="line">
           Advisor: {{ position.advisor }}
-        </div><br>
+        </div>
+        {% if position.note %}
+          <div class="line"><i>{{ position.note }}</i></div>
+        {% endif %}
+        <br>
       </div>
     </div>
   {% endfor %}
@@ -140,6 +144,28 @@ inlineCSS: >-
       </div>
   </div>
   {% endfor %}
+</div>
+
+<!-- Review Service -->
+<br>
+<div class="card">
+  <h2 class="header">Review Service</h2>
+  <ul>
+    {% for review in site.data.cv.reviews %}
+      <li>{{ review.venue }} ({{ review.year }})</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- Scholarships & Grants -->
+<br>
+<div class="card">
+  <h2 class="header">Scholarship &amp; Grant</h2>
+  <ul>
+    {% for s in site.data.cv.scholarships %}
+      <li><b>{{ s.year }}</b> {{ s.title }}, <i>{{ s.institution }}</i></li>
+    {% endfor %}
+  </ul>
 </div>
 
 
