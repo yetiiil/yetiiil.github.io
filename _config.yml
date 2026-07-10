@@ -34,6 +34,7 @@ description: "PhD student in Computer Science at Technical University of Munich.
 # theme: minima
 plugins:
   - jekyll-assets
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
